@@ -304,7 +304,7 @@ namespace JAccounts.Controllers
         public ActionResult LinkLogin(string provider)
         {
             // Demander une redirection vers le fournisseur de connexion externe afin de lier une connexion pour l'utilisateur actuel
-            return new AccountController.ChallengeResult(provider, Url.Action("LinkLoginCallback", "Manage"), User.Identity.GetUserId());
+            return new UserAccountController.ChallengeResult(provider, Url.Action("LinkLoginCallback", "Manage"), User.Identity.GetUserId());
         }
 
         //

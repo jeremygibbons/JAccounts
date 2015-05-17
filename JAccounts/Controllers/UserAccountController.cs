@@ -13,16 +13,16 @@ using JAccounts.Models;
 namespace JAccounts.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class UserAccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
-        public AccountController()
+        public UserAccountController()
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public UserAccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
             SignInManager = signInManager;

@@ -29,5 +29,9 @@ namespace JAccounts.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<JAccounts.Models.Account> Accounts { get; set; }
+
+        public System.Data.Entity.DbSet<JAccounts.Models.AccountType> AccountTypes { get; set; }
     }
 }
